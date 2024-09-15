@@ -1,0 +1,23 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiohttp>=3.10.5",
+    "asyncpg>=0.29.0",
+    "mypy>=1.11.2",
+    "pydantic>=2.9.1",
+    "pytest>=8.3.3",
+    "reactivex>=4.0.4",
+    "ruff>=0.6.5",
+    "tortoise-orm>=0.21.6",
+    "uvicorn>=0.30.6",
+]
+
+
+[tool.ruff]
+select = ["E", "F", "W", "C", "B"]
+ignore = ["E501"]
+max-line-length = 120
